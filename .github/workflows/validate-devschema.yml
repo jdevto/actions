@@ -5,14 +5,17 @@ on:
       schema:
         description: "Path or URL to the JSON schema."
         required: false
+        type: string
         default: "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json"
       data:
         description: "Path or URL to the JSON data."
         required: false
+        type: string
         default: ".devcontainer/devcontainer.json"
       verbose:
         description: "Enable verbose output."
         required: false
+        type: boolean
         default: false
       python-version:
         description: |
@@ -23,6 +26,7 @@ on:
           - 3.12
           - 3.13
         required: false
+        type: string
         default: "3.13"
 
 jobs:
